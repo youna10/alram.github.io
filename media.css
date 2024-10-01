@@ -1,0 +1,75 @@
+:root{
+    --media-small:12px;
+    --media-medium:15px;
+    --media-large:20px;
+}
+
+@media screen and (max-width:988px) {
+    .headertop{
+        background: var(--font-white);
+        width: 100%;
+        position: fixed;
+        z-index: 999;
+    }
+    .tooglebtn{
+        cursor: pointer;
+        display: flex;
+    }
+    .index_all{
+        position: absolute;
+        top:68px;
+        display: none;
+        width:100%;
+        height:30vh;
+        background-color:var( --font-white) ;
+        z-index: 50;      
+    }
+   .index_allul{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        width: 100%;
+   }
+   .index_allul li{
+        width: 100%;
+   }
+   .index_allul li:hover{   
+        background-color: var(--font-subsubcolor);
+   }
+   .index_allul li a:hover{
+        text-decoration: none;
+   }
+   .index_all.active{
+        display: block;
+   }
+   .index_project:hover .index_hidden{
+         display: none;
+    }
+    .section4_1{
+        padding-top: 30px;
+    }
+    .alram_maintext{
+        margin-right: 50px;
+    }
+    .alramimg img{
+        width: 450px;
+        height: 250px;
+    }
+    .alramtaskflow{
+        margin: 100px;
+    }
+    .alramtaskflowimg img{
+        width: 500px;
+        height: 400px;
+    }
+    .alram_finalimg img{
+        margin-top: 15px;
+        margin-left: -50px;
+    }
+    .total_search{
+        flex-direction: column;
+    }
+    .alram_search1{
+        margin: 30px;
+    }
+}

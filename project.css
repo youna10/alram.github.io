@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+    font-family:"Noto Sans KR", sans-serif ;
+    src: url("font\NotoSansKR-VariableFont_wght.ttf")  format("ttf"); 
+    unicode-range: U+AC00-D7A3;
+}
+@font-face {
+    font-family: "Work Sans";
+    src: url("font\WorkSans-VariableFont_wght.ttf") format("ttf");
+    unicode-range: U+0041-005A, U+0061-007A;
+}
+
+:root{
+    --text:5rem;
+    --subtext:23px;
+    --background-color1:rgba(255,255,255);
+    --font-small:13px;
+    --font-btn:15px;
+    --font-medium:18px;
+    --font-large:25px;
+    --font-big:6.5rem;
+    --text:5rem;
+    --subtext:23px;
+    --font-color:#6c6b69;
+    --font-subcolor:#0b0b0b ;
+    --font-subsubcolor:#b6b5b1;
+    --font-white: #fcfcf7;
+    --font-korea:"Noto Serif KR", serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    text-decoration: none;
+     
+}
+html{
+    width: 100%;  
+    background: #F5F3EE;   
+}
+body{
+    font-family:  "Noto Sans KR " ,"Work Sans" ;
+}
+ .section4_1{
+    height: 65vh;
+}
+.alramimg img{
+ 
+    width: 400px;
+    height: 270px;
+}
+.alram_main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    height: 100%;
+    width: 100%;
+}
+.alram_maintext{
+    margin-left: 130px;
+ }
+ .alram_text h2{
+    font-size: var(--font-large);
+    color: var(--font-color);
+    margin-bottom: 5px;
+}
+.alram_text p{
+    font-size: var(--font-medium);
+    color: var(--font-color);
+    margin-bottom: 5px;
+}
+
+.alram_subtext{
+    margin-top: 10px;
+}
+.alram_subtext ul{
+    list-style: none;
+}
+.alram_subtext ul li{
+    margin-bottom: 15px;
+    display: flex;
+}
+.alram_subtext p:nth-child(1){
+    font-size: var(--font-medium);
+    color: var(--font-color);
+    font-weight: 600;
+}
+.alram_subtext p:nth-child(2){
+    font-size: var(--font-medium);
+    color: var(--font-color);
+    margin-left: 20px;
+}
+.sub_alram{
+    margin-top: 50px;
+}
+.topname h2,
+.alram_card h2,
+.alram_taskflow h2,
+.alram_final h2{ /* 제목*/
+    text-align: center;
+    font-size: var(--text);
+    color: var(--font-color);
+ 
+}
+.topname p,
+.alram_card p,
+.alram_taskflow p,
+.alram_final p{ /* 소제목*/ 
+    font-size: var(--subtext);
+    color: var(--font-subcolor);
+    text-align: center;
+    margin-top: 10px;
+}
+.alram_card,
+.alram_final{
+    margin: 60px;
+}
+.total_search{ /* search */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.alarm_button{
+    margin-right: 20%;
+
+}
+.alram1img{
+    width: 50px;
+    height: 50px;
+}
+.alram_search1{
+    margin: 20px;
+}
+.alram_search1 p{
+    color: var(--font-subsubcolor);
+}
+.alram_search1 h3{  /* search 1,2,3 h3*/
+    font-size: var(--font-medium);
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+.alram_search1 ul  {
+    list-style: none;
+}
+.alram_cardsortingimg{
+    text-align: center;
+}
+.alram_cardsortingimg img{
+    width: 400px;
+    height: 260px
+}
+ 
+.alramtaskflowimg img{
+    position: relative;
+    left: 20%;
+    width: 900px;
+    height: 500px;
+}
+.alram_finalimg img{
+    margin-top: 15px;
+    position: relative;
+    left: 30%;
+    width: 520px;
+    height: 450px;
+}
+
+/*design 공통부분*/
+/*header top*/
+.headertop{
+    box-shadow: 0px 2px 2px #999;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    justify-content: space-between;
+}
+.index_all{
+    margin-right: 350px;
+    z-index: 100;
+}
+.index_all ul{
+    display: flex;
+    list-style: none;
+    font-size: 1.1rem;
+}
+.index_all ul li{
+    margin: 0 50px;
+    padding: 3px 3px;
+}
+.name_nav,
+.project_nav{
+    padding: 0 15px;
+    color: var(--font-color);
+    font-weight: 600;
+    letter-spacing: 2px;
+
+}
+.index_project .index_hidden{
+    display: none;
+    width: 150px;
+    position: absolute;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 3px;
+    margin-left:10px;
+    background-color: #f5f4ef;
+    border-radius: 20px;
+    
+    
+}
+.index_project .index_hidden li{
+    margin-left: 30px;
+    padding-bottom: 6px;
+    font-size: var(--font-btn);
+}
+.hidden_nav{
+    color: var(--font-subcolor);
+}
+.index_name a:hover,
+.index_project a:hover{
+    transition: 0.2s;
+    color: var(--font-subcolor);
+    text-decoration: underline;
+    text-underline-offset : 6px;
+    text-decoration-thickness:2px ;
+}
+.index_project:hover .index_hidden{
+    display: block;
+    z-index: 999;
+}
+.hidden_nav:hover{
+    color: var(--font-white);
+}
+.tooglebtn{
+    display: none;
+    position: absolute;
+    right: 32px;
+    font-size: 30px;
+}
+
+.procedure{ /* 밑으로 내려가는 버튼*/
+    padding: 7px 25px;
+    border-radius: 10px;
+    font-weight: 500;
+    color: var(--font-color);
+    box-shadow: 5px 3px 3px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    font-size: 13.5px;
+    margin-top: 10px;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+.btn1{
+    background:#f1c387;
+    border: 1px solid #f1c387;
+}
+.btn1:hover,
+.btn2:hover,
+.btn3:hover{
+    color: var(--font-white);
+}
+.btn2{
+    background:#d37f76ee;
+    border: 1px solid #d37f76ee;
+}
+.btn3{
+    background:#857d7cee ;
+    border: 1px solid #857d7cee;
+}
+.design_text{
+    display: flex;
+}
+.design h2,
+.smartperfume_flowchart h2,
+.smartperfume_circuit h2,
+.smartperfume_design h2,
+.smartperfume_userguide h2{
+    text-align: center;
+    font-size: var(--text);
+    color: var(--font-color);
+}
+.design_concept p,
+.smartperfume_flowchart p,
+.smartperfume_circuit p,
+.smartperfume_design p,
+.smartperfume_userguide p{
+    text-align: center;
+    color: var(--font-subcolor);
+    font-size: var(--subtext);
+}
+.design{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.design_text i{
+    font-size: 47px;
+    display: flex;
+    justify-content: center;
+}
+.design_text p{
+    margin: 10px 60px;
+    text-align: center;
+}
